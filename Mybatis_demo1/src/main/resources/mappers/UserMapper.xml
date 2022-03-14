@@ -6,4 +6,16 @@
     <insert id="insertUser">
         insert into t_user values (null, 'admin', '123456', 26, '男', '11123@qq.com');
     </insert>
+
+    <delete id="deleteUser">
+        delete from t_user where id = '4';
+    </delete>
+
+    <select id="selectUser" resultType="com.atgg.mybatis.pojo.User">
+        select * from t_user where id = '5';
+    </select>
+
+    <insert id="updateUser">
+        update t_user set email = '84u84u@qq.com' where id = '2';
+    </insert>
 </mapper>
